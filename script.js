@@ -1,4 +1,5 @@
  window.addEventListener('load', function () {
+  // Add botão Whatsapp (Dieta Personalizada) no menu
     function addWhatsapp(){
     const whatsapp=` <li class="header-actions__item account"><a href="https://api.whatsapp.com/send?phone=11989072112" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0,0,256,256">
@@ -9,17 +10,65 @@
     </li>`
     $(".header-actions__item.account").after(whatsapp);
     }
-    
+  
+  // Adicionar endereço no rodapé da página
 function addEndereco() {
     const endereco=`<p class="title">                            
                         Rua Pedroso 258 – Box 2 - Bela Vista - São Paulo - SP - CEP: 01322-010
                     </p>`
     $("#rodape > div.institucional.fundo-secundario > div > div > div > div > div.links-rodape.links-rodape-atendimento.span3 > div > p:nth-child(2)").after(endereco);
 }
-
     addWhatsapp();
     addEndereco();
 
+  // Remove os logos nativos da Loja Integrada e Alpha Theme
+  function removeLogoRodape() {
+    document.getElementById("cr-li").remove(); // remove Logo Loja Integrada
+    document.getElementById("cr-alpha-theme").remove(); // remove Logo Alpha Theme
+  }
+    removeLogoRodape();
+
+   // Adiciona mini banner na página home
+  function criaIMiniBanner(){
+    const image = ` 
+    <a href="https://marmitaria-fit-food.lojaintegrada.com.br/kits-fitness">
+        <img class="mini_desktop" src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini-banner---kits-1.png"/>
+        <img class="mini_mobile" src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini-banner---kits-mobile-1.png"/>
+    </a>`
+    $("#listagemProdutos > ul:nth-child(4)").after(image)
+}
+criaIMiniBanner();
+
+ // Adiciona mini banner na página home
+function miniBanner() {
+    const image = ` 
+    <ul style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px;">
+        <a href="https://marmitaria-fit-food.lojaintegrada.com.br/sobremesas">
+            <li style="max-width: 550px"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini---banner-sobremesa.png"/></li>
+        </a>
+        <a href="https://marmitaria-fit-food.lojaintegrada.com.br/snacks">
+            <li style="max-width: 550px"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini---banner-snacks.png"/></li>
+        </a>
+    </ul>`
+    $("#listagemProdutos > ul:nth-child(10)").after(image)
+}
+miniBanner();
+
+  // Adiciona o logo da Mktnow no rodapé como Desenvolvedor
+function rodapeMktnow () {
+    const image = ` 
+    <div style="display: flex; justify-content: center">
+        <a href="https://www.mktnow.com.br/" target="_blank">
+            <img src="https://cdn.awsli.com.br/1228/1228284/arquivos/mktnow-logo.png" alt="" style="margin: 10px; transform: scale(0.7);">
+        </a>
+    </div>`
+    $("#rodape").after(image)
+}
+rodapeMktnow();
+
+
+
+  
      // Função para abrir o modal
 function openModal() {
     document.getElementById('overlayy').style.display = 'flex';
