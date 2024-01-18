@@ -13,6 +13,7 @@
       addWhatsapp();
 
   // Add botão Consultar Entrega (Entrega aqui?) no menu
+   window.addEventListener('load', function () {
   function addEntregaAqui(){
     const entregaAqui=` <li class="header-actions__item account"><!-- Botão que abre o modal -->
      <a class="open-modal-btn" onclick="openModal()"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/icons8-delivery-50.png" />Entrega Aqui?</a>
@@ -49,6 +50,7 @@
          $(".header-actions__item.account").after(entregaAqui);
          }
      addEntregaAqui();
+   });
   
   // Adicionar endereço no rodapé da página
 function addEndereco() {
