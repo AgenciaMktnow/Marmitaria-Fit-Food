@@ -1,4 +1,4 @@
-// window.addEventListener('load', function () {
+ window.addEventListener('load', function () {
     function addWhatsapp(){
     const whatsapp=` <li class="header-actions__item account"><a href="https://api.whatsapp.com/send?phone=11989072112" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0,0,256,256">
@@ -20,4 +20,67 @@ function addEndereco() {
     addWhatsapp();
     addEndereco();
 
-// }); // fechar addEvent
+     // Função para abrir o modal
+function openModal() {
+    document.getElementById('overlayy').style.display = 'flex';
+    document.getElementById('modall').style.display = 'block';
+}
+
+// Função para fechar o modal
+function closeModal() {
+    document.getElementById('overlayy').style.display = 'none';
+    document.getElementById('modall').style.display = 'none';
+}
+
+
+
+// Código de Atendimento de Região via CEP
+function verificarFaixaCEP(cep) {
+    // Defina as faixas de CEP para a região desejada
+    var ceps = [
+        { inicial: '10000000', final: '15000000' },
+        { inicial: '20000000', final: '25000000' },
+        { inicial: '30000000', final: '35000000' }
+    ];
+
+    console.log("botão funcionou!")
+    // Remova qualquer caracter não numérico do CEP
+    cep = cep.replace(/\D/g, '');
+
+    // Verifique se o CEP está dentro de alguma das faixas
+    if (cep == '') {
+
+        document.getElementById("sim").style.display = "none";
+        document.getElementById("nao").style.display = "none";
+        document.getElementById("info").style.display = "block";
+
+    } else {
+        document.getElementById("info").style.display = "none";
+
+        var dentroDaFaixa = false;
+        for (var i = 0; i < ceps.length; i++) {
+            if (cep >= ceps[i].inicial && cep <= ceps[i].final) {
+                dentroDaFaixa = true;
+
+                document.getElementById("sim").style.display = "block";
+                document.getElementById("nao").style.display = "none";
+
+                break;
+            } else {
+                document.getElementById("sim").style.display = "none";
+                document.getElementById("nao").style.display = "block";
+            }
+        }
+    }
+
+}
+
+// Adicionar botão no menu mobile
+     function addEntregaAqui(){
+         const entregaAqui=`<a onclick="openModal()"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/icons8-delivery-50.png" />Entrega Aqui?</a>`
+         $("#cabecalho > div.conteiner > div.menu.superior.visible-phone.open > div.barra-tracking-mobile").after(entregaAqui);
+         }
+         addEntregaAqui();
+        
+
+ }); // fechar addEvent
