@@ -163,11 +163,11 @@ function verificarFaixaCEP(cep) {
 }
 
 // Adicionar botão no menu mobile
-     function addEntregaAquiMobile(){
-         const entregaAquiMobile=`<a onclick="openModal()"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/icons8-delivery-50.png" />Entrega Aqui?</a>`
-         $("#cabecalho > div.conteiner > div.menu.superior.visible-phone.open > div.barra-tracking-mobile").after(entregaAquiMobile);
-         }
-         addEntregaAquiMobile();
+     // function addEntregaAquiMobile(){
+     //     const entregaAquiMobile=`<a onclick="openModal()"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/icons8-delivery-50.png" />Entrega Aqui?</a>`
+     //     $("#cabecalho > div.conteiner > div.menu.superior.visible-phone.open > div.barra-tracking-mobile").after(entregaAquiMobile);
+     //     }
+     //     addEntregaAquiMobile();
         
 
  }); // fechar addEvent
