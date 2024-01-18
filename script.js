@@ -37,7 +37,7 @@
                  <div class="info-cep">
                      <h1 id="sim" class="sim">Sim! Entregamos na sua região.</h1>
                      <h1 id="nao" class="nao">Pedimos desculpas, mas no momento ainda não realizamos entregas na sua região. Estamos empenhados em expandir nossa cobertura e em breve estaremos levando todo o nosso sabor até a sua casa. Enquanto isso, você pode entrar em contato conosco através do nosso WhatsApp para agendar a retirada dos seus pedidos em nossa loja física.</h1>
-                     <h1 id="info" class="info">Informe um CEP.</h1>
+                     <h1 id="info" class="info">Por favor, informe um CEP.</h1>
                  </div>
                  
              </div>
