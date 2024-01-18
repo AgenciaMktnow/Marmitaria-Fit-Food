@@ -37,42 +37,42 @@
       addWhatsapp();
 
   // Add botão Consultar Entrega (Entrega aqui?) no menu
-  function addEntregaAqui(){
-    const entregaAqui=` <li class="header-actions__item account"><!-- Botão que abre o modal -->
-     <a class="open-modal-btn" onclick="openModal()"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/icons8-delivery-50.png" />Entrega Aqui?</a>
+  // function addEntregaAqui(){
+  //   const entregaAqui=` <li class="header-actions__item account"><!-- Botão que abre o modal -->
+  //    <a class="open-modal-btn" onclick="openModal()"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/icons8-delivery-50.png" />Entrega Aqui?</a>
 
-     <!-- Overlay e Modal -->
-     <div class="overlayy" id="overlayy">
-         <div class="modall" id="modall">
-             <div class="container-cep">
-                 <div class="titulo-cep">
-                     <h1>Consultar área de entrega</h1>
-                     <p>
-                         Insira o CEP de entrega no formulário abaixo e confirme se a região está em nossa área de cobertura.
-                     </p>
-                 </div>
-                 <form class="form-cep">
-                     <div class="caixa-cep">
-                         <label>CEP:</label>
-                         <input type="text" id="cep" size="20">
-                         <input type="button" onclick="verificarFaixaCEP(document.getElementById('cep').value)" id="validar" value="Verificar">
-                     </div>
-                 </form>
-                 <div class="info-cep">
-                     <h1 id="sim" class="sim">Sim! Entregamos na sua região.</h1>
-                     <h1 id="nao" class="nao">Pedimos desculpas, mas no momento ainda não realizamos entregas na sua região. Estamos empenhados em expandir nossa cobertura e em breve estaremos levando todo o nosso sabor até a sua casa. Enquanto isso, você pode entrar em contato conosco através do nosso WhatsApp para agendar a retirada dos seus pedidos em nossa loja física.</h1>
-                     <h1 id="info" class="info">Informe um CEP.</h1>
-                 </div>
+  //    <!-- Overlay e Modal -->
+  //    <div class="overlayy" id="overlayy">
+  //        <div class="modall" id="modall">
+  //            <div class="container-cep">
+  //                <div class="titulo-cep">
+  //                    <h1>Consultar área de entrega</h1>
+  //                    <p>
+  //                        Insira o CEP de entrega no formulário abaixo e confirme se a região está em nossa área de cobertura.
+  //                    </p>
+  //                </div>
+  //                <form class="form-cep">
+  //                    <div class="caixa-cep">
+  //                        <label>CEP:</label>
+  //                        <input type="text" id="cep" size="20">
+  //                        <input type="button" onclick="verificarFaixaCEP(document.getElementById('cep').value)" id="validar" value="Verificar">
+  //                    </div>
+  //                </form>
+  //                <div class="info-cep">
+  //                    <h1 id="sim" class="sim">Sim! Entregamos na sua região.</h1>
+  //                    <h1 id="nao" class="nao">Pedimos desculpas, mas no momento ainda não realizamos entregas na sua região. Estamos empenhados em expandir nossa cobertura e em breve estaremos levando todo o nosso sabor até a sua casa. Enquanto isso, você pode entrar em contato conosco através do nosso WhatsApp para agendar a retirada dos seus pedidos em nossa loja física.</h1>
+  //                    <h1 id="info" class="info">Informe um CEP.</h1>
+  //                </div>
                  
-             </div>
+  //            </div>
      
-             <button class="btn-cep" onclick="closeModal()">×</button>
-         </div>
-     </div>
-     </li>`
-         $(".header-actions__item.account").after(entregaAqui);
-         }
-     addEntregaAqui();
+  //            <button class="btn-cep" onclick="closeModal()">×</button>
+  //        </div>
+  //    </div>
+  //    </li>`
+  //        $(".header-actions__item.account").after(entregaAqui);
+  //        }
+  //    addEntregaAqui();
   
   // Adicionar endereço no rodapé da página
 function addEndereco() {
