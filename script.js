@@ -45,7 +45,7 @@
          </div>
      </div>
          </li>`
-         $("#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li:nth-child(2)").after(entregaAqui);
+         $("#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li.header-actions__item.help").before(entregaAqui);
          }
      addEntregaAqui();
   
