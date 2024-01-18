@@ -46,7 +46,7 @@
          </div>
      </div>
      </li>`
-         $(".header-actions__item.help").after(entregaAqui);
+         $(".header-actions__item.help").before(entregaAqui);
          }
      addEntregaAqui();
   
