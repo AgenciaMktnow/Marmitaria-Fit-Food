@@ -15,13 +15,14 @@ window.addEventListener('load', function () {
 
 
 	document.getElementById("gclidWhatsApp").value = qs("gclid");
+	document.getElementById("fbclidWhatsApp").value = qs("fbclid");
 
 
 	var whatsappPhone = "11989072112";
 
 	var links = document.querySelectorAll('a[href*="'+whatsappPhone+'"]');
 	for (var i = 0; i < links.length; i++) {
-	    links[i].href = "#WhatsappModalForm";
+	    // links[i].href = "#WhatsappModalForm";
 	    links[i].setAttribute("rel", "modal:open");
 	}
 
