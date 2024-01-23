@@ -12,10 +12,11 @@
     }
       addWhatsapp();
 
-  function abrirModal {
-      const showModal = document.getElementId("whatsModalWidget")
-      showModal.classList.add('abrir')
-  }
+  // function abrirModal {
+  //     const showModal = document.getElementId("whatsModalWidget")
+  //     showModal.classList.add('abrir')
+  // }
+  
   // Add botão Consultar Entrega (Entrega aqui?) no menu
   function addEntregaAqui(){
     const entregaAqui=` <li class="header-actions__item account"><!-- Botão que abre o modal -->
