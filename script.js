@@ -114,13 +114,6 @@ rodapeMktnow();
 
  }); // fechar addEventListener
 
-// Função para abrir o Modal do Whatsapp
-
-function abrirModal {
-      const showModal = document.getElementId("whatsModalWidget")
-      showModal.classList.add('abrir')
-  }
-
 // Função para abrir o modal
 function openModal() {
     document.getElementById('overlayy').style.display = 'flex';
