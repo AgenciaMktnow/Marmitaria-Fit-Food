@@ -11,11 +11,6 @@
     $(".header-actions__item.account").after(whatsapp);
     }
       addWhatsapp();
-
-  // function abrirModal {
-  //     const showModal = document.getElementId("whatsModalWidget")
-  //     showModal.classList.add('abrir')
-  // }
   
   // Add botão Consultar Entrega (Entrega aqui?) no menu
   function addEntregaAqui(){
@@ -119,7 +114,12 @@ rodapeMktnow();
 
  }); // fechar addEventListener
 
+// Função para abrir o Modal do Whatsapp
 
+function abrirModal {
+      const showModal = document.getElementId("whatsModalWidget")
+      showModal.classList.add('abrir')
+  }
 
 // Função para abrir o modal
 function openModal() {
