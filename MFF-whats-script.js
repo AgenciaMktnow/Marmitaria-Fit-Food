@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
 
 	var links = document.querySelectorAll('a[href*="'+whatsappPhone+'"]');
 	for (var i = 0; i < links.length; i++) {
-	    links[i].href = "#WhatsappModalForm";
+	    // links[i].href = "#WhatsappModalForm";
 	    links[i].setAttribute("rel", "modal:open");
 	}
 
