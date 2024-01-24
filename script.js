@@ -59,13 +59,13 @@ function addEndereco() {
 }
     addEndereco();
 
-  // Remove os logos nativos da Loja Integrada e Alpha Theme
-  function removeLogoRodape() {
-    document.getElementById("cr-li").remove(); // remove Logo Loja Integrada
-    document.getElementById("cr-alpha-theme").remove(); // remove Logo Alpha Theme
-    document.getElementsByClassName(".cr.conteiner").remove(); // Remove os dois
-  }
-    removeLogoRodape();
+  // // Remove os logos nativos da Loja Integrada e Alpha Theme
+  // function removeLogoRodape() {
+  //   document.getElementById("cr-li").remove(); // remove Logo Loja Integrada
+  //   document.getElementById("cr-alpha-theme").remove(); // remove Logo Alpha Theme
+  //   document.getElementsByClassName(".cr.conteiner").remove(); // Remove os dois
+  // }
+  //   removeLogoRodape();
 
    // Adiciona mini banner na página home
   function criaIMiniBanner(){
@@ -114,6 +114,14 @@ miniBanner();
         
 
  }); // fechar addEventListener
+
+  // Remove os logos nativos da Loja Integrada e Alpha Theme
+  function removeLogoRodape() {
+    document.getElementById("cr-li").remove(); // remove Logo Loja Integrada
+    document.getElementById("cr-alpha-theme").remove(); // remove Logo Alpha Theme
+    document.getElementsByClassName(".cr.conteiner").remove(); // Remove os dois
+  }
+    removeLogoRodape();
 
   // Adiciona o logo da Mktnow no rodapé como Desenvolvedor
 function rodapeMktnow() {
