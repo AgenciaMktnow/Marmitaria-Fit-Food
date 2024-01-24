@@ -102,7 +102,6 @@ function rodapeMktnow () {
         </a>
     </div>`
     $("#rodape").after(image);
-    $(".cr.conteiner").after(image);
 }
 rodapeMktnow();
 
