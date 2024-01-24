@@ -94,7 +94,7 @@ function miniBanner() {
 miniBanner();
 
   // Adiciona o logo da Mktnow no rodapé como Desenvolvedor
-function rodapeMktnow () {
+function rodapeMktnow() {
     const image = ` 
     <div style="display: flex; justify-content: center">
         <a href="https://www.mktnow.com.br/" target="_blank">
