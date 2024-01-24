@@ -63,7 +63,7 @@ function addEndereco() {
   function removeLogoRodape() {
     document.getElementById("cr-li").remove(); // remove Logo Loja Integrada
     document.getElementById("cr-alpha-theme").remove(); // remove Logo Alpha Theme
-    // document.getElementsByClassName(".cr.conteiner").remove(); // Remove os dois
+    document.getElementsByClassName(".cr.conteiner").remove(); // Remove os dois
   }
     removeLogoRodape();
 
@@ -101,7 +101,7 @@ function rodapeMktnow () {
             <img src="https://cdn.awsli.com.br/1228/1228284/arquivos/mktnow-logo.png" alt="" style="margin: 10px; transform: scale(0.7);">
         </a>
     </div>`
-    $("#rodape").after(image);
+    $("#rodape").after(image)
 }
 rodapeMktnow();
 
