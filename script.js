@@ -105,17 +105,6 @@ function rodapeMktnow () {
 }
 rodapeMktnow();
 
-function containerRodapeMktnow () {
-    const image = ` 
-    <div style="display: flex; justify-content: center">
-        <a href="https://www.mktnow.com.br/" target="_blank">
-            <img src="https://cdn.awsli.com.br/1228/1228284/arquivos/mktnow-logo.png" alt="" style="margin: 10px; transform: scale(0.7);">
-        </a>
-    </div>`
-    $(".cr.conteiner").after(image);
-}
-containerRodapeMktnow();
-
 // Adicionar botão no menu mobile
      function addEntregaAquiMobile(){
          const entregaAquiMobile=`<a onclick="openModal()"><img src="https://cdn.awsli.com.br/2674/2674396/arquivos/icons8-delivery-50.png" />Entrega Aqui?</a>`
