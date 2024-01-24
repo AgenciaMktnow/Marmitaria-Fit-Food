@@ -94,16 +94,16 @@ function miniBanner() {
 miniBanner();
 
   // Adiciona o logo da Mktnow no rodapé como Desenvolvedor
-function rodapeMktnow() {
-    const image = ` 
-    <div style="display: flex; justify-content: center">
-        <a href="https://www.mktnow.com.br/" target="_blank">
-            <img src="https://cdn.awsli.com.br/1228/1228284/arquivos/mktnow-logo.png" alt="" style="margin: 10px; transform: scale(0.7);">
-        </a>
-    </div>`
-    $("#rodape").after(image)
-}
-rodapeMktnow();
+// function rodapeMktnow() {
+//     const image = ` 
+//     <div style="display: flex; justify-content: center">
+//         <a href="https://www.mktnow.com.br/" target="_blank">
+//             <img src="https://cdn.awsli.com.br/1228/1228284/arquivos/mktnow-logo.png" alt="" style="margin: 10px; transform: scale(0.7);">
+//         </a>
+//     </div>`
+//     $("#rodape").after(image)
+// }
+// rodapeMktnow();
 
 // Adicionar botão no menu mobile
      function addEntregaAquiMobile(){
@@ -114,6 +114,18 @@ rodapeMktnow();
         
 
  }); // fechar addEventListener
+
+  // Adiciona o logo da Mktnow no rodapé como Desenvolvedor
+function rodapeMktnow() {
+    const image = ` 
+    <div style="display: flex; justify-content: center">
+        <a href="https://www.mktnow.com.br/" target="_blank">
+            <img src="https://cdn.awsli.com.br/1228/1228284/arquivos/mktnow-logo.png" alt="" style="margin: 10px; transform: scale(0.7);">
+        </a>
+    </div>`
+    $("#rodape").after(image)
+}
+rodapeMktnow();
 
 // Função para abrir o modal
 function openModal() {
