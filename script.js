@@ -63,7 +63,7 @@ function addEndereco() {
   function removeLogoRodape() {
     document.getElementById("cr-li").remove(); // remove Logo Loja Integrada
     document.getElementById("cr-alpha-theme").remove(); // remove Logo Alpha Theme
-    document.getElementsByClassName(".cr.conteiner").remove(); // Remove os dois
+    // document.getElementsByClassName(".cr.conteiner").remove(); // Remove os dois
   }
     removeLogoRodape();
 
