@@ -101,7 +101,8 @@ function rodapeMktnow () {
             <img src="https://cdn.awsli.com.br/1228/1228284/arquivos/mktnow-logo.png" alt="" style="margin: 10px; transform: scale(0.7);">
         </a>
     </div>`
-    $("#rodape").after(image)
+    $("#rodape").after(image);
+    $(".cr.conteiner").after(image);
 }
 rodapeMktnow();
 
