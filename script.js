@@ -113,6 +113,13 @@ miniBanner();
          addEntregaAquiMobile();
         
 
+   $('.botao-buy-whatsapp').attr("href", "#");
+   $('.botao-buy-whatsapp').attr("target", null);
+
+   $('#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li.header-actions__item.help > div > ul > li.tel-whatsapp > a').attr("href", "#");
+   $('#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li.header-actions__item.help > div > ul > li.tel-whatsapp > a').attr("target", null);
+   $('#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li.header-actions__item.help > div > ul > li.tel-whatsapp > a').attr("id", "btnWhatsContato");
+
  }); // fechar addEventListener
 
 
@@ -181,10 +188,3 @@ function verificarFaixaCEP(cep) {
         }
     }
 }
-
-    $('.botao-buy-whatsapp').attr("href", "#");
-    $('.botao-buy-whatsapp').attr("target", null);
-
-    $('#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li.header-actions__item.help > div > ul > li.tel-whatsapp > a').attr("href", "#");
-    $('#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li.header-actions__item.help > div > ul > li.tel-whatsapp > a').attr("target", null);
-    $('#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li.header-actions__item.help > div > ul > li.tel-whatsapp > a').attr("id", "btnWhatsContato");
