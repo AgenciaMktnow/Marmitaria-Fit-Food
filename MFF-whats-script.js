@@ -1,5 +1,45 @@
 window.addEventListener('load', function () {
 
+	// botão Whatsapp do Formulário Fale Conosco Header
+        var btnWhatsFaleconoscoHeader = document.querySelector("#cabecalho > div.conteiner > div.row-fluid > div.conteudo-topo.span9 > div.inferior.row-fluid > div.span4.hidden-phone > ul > li.header-actions__item.help > a");
+
+        btnWhatsFaleconoscoHeader.addEventListener("click", function () {
+            setTimeout(() => {
+                var btnWhatsNumero = document.querySelector("#modalContato > form > div > div > div:nth-child(2) > table > tbody > tr:nth-child(4) > td:nth-child(2) > span > a");
+                btnWhatsNumero.setAttribute("href", "#");
+                btnWhatsNumero.setAttribute("target", "");
+                var floatBtnWhats = document.querySelector(".floatWhatsBtn img");
+                var fecharForm = document.querySelector("button i.icon-remove");
+
+                btnWhatsNumero.addEventListener("click", function () {
+                    fecharForm.click();
+                    floatBtnWhats.click();
+                })
+
+              }, 1000);
+        })
+        // botão Whatsapp do Formulário Fale Conosco Header
+
+        // botão Whatsapp do Formulário Fale Conosco Footer
+        var btnWhatsFaleconoscoFooter = document.querySelector("#liRodape_faleconosco > a");
+
+        btnWhatsFaleconoscoFooter.addEventListener("click", function () {
+            setTimeout(() => {
+                var btnWhatsNumero = document.querySelector("#modalContato > form > div > div > div:nth-child(2) > table > tbody > tr:nth-child(4) > td:nth-child(2) > span > a");
+                btnWhatsNumero.setAttribute("href", "#");
+                btnWhatsNumero.setAttribute("target", "");
+                var floatBtnWhats = document.querySelector(".floatWhatsBtn img");
+                var fecharForm = document.querySelector("button i.icon-remove");
+
+                btnWhatsNumero.addEventListener("click", function () {
+                    fecharForm.click();
+                    floatBtnWhats.click();
+                })
+
+              }, 1000);
+        })
+        // botão Whatsapp do Formulário Fale Conosco Footer
+
 	var whatsBtn = document.querySelector("#BtnEnvFrmModWhatsApp");
 	whatsBtn.addEventListener('click', function(){
    		window.open('https://api.whatsapp.com/send?phone=11989072112', '_blank').focus();
