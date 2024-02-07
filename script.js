@@ -30,7 +30,7 @@
                  <form class="form-cep">
                      <div class="caixa-cep">
                          <label>CEP:</label>
-                         <input type="text" id="cep" size="20">
+                         <input type="text" id="cep" maxlength="8" size="20">
                          <input type="button" onclick="verificarFaixaCEP(document.getElementById('cep').value)" id="validar" value="Verificar">
                      </div>
                  </form>
