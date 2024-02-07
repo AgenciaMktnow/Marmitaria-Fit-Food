@@ -148,7 +148,7 @@ function closeModal() {
 function verificarFaixaCEP(cep) {
     // Defina as faixas de CEP para a região desejada
     var ceps = [
-        ['01000000', '10000000']
+     {'01000000', '10000000'}
         // { inicial: '01000000', final: '19999999' },
         // { inicial: '20000000', final: '25000000' },
         // { inicial: '30000000', final: '35000000' }
