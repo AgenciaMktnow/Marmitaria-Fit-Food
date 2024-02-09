@@ -77,7 +77,7 @@ function addEndereco() {
         <img class="mini_desktop" src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini-banner---kits-1.png"/>
         <img class="mini_mobile" src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini-banner---kits-mobile-1.png"/>
     </a>`
-    $("#listagemProdutos > ul:nth-child(4)").after(image)
+    $("#listagemProdutos > ul:nth-child(5)").after(image)
 }
 criaIMiniBanner();
 
