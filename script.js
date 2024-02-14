@@ -75,7 +75,7 @@ function addEndereco() {
     const image = ` 
     <a style="display: flex; justify-content: center;" href="https://marmitaria-fit-food.lojaintegrada.com.br/kits-fitness">
         <img class="mini_desktop" src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini-banner---kits-1.png"/>
-        <img style="border: radius: 20px" class="mini_mobile" src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini-banner---kits-mobile-1.png"/>
+        <img style="border-radius: 20px;" class="mini_mobile" src="https://cdn.awsli.com.br/2674/2674396/arquivos/mini-banner---kits-mobile-1.png"/>
     </a>`
     $("#listagemProdutos > ul:nth-child(5)").after(image)
 }
