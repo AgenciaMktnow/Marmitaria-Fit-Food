@@ -42,7 +42,7 @@ window.addEventListener('load', function () {
 
 	var whatsBtn = document.querySelector("#BtnEnvFrmModWhatsApp");
 	whatsBtn.addEventListener('click', function(){
-   		window.open('https://api.whatsapp.com/send?phone=5511993359712', '_blank').focus();
+   		window.open('https://api.whatsapp.com/send?phone=5511989072112', '_blank').focus();
  	})
 
 
@@ -58,7 +58,7 @@ window.addEventListener('load', function () {
 	document.getElementById("fbclidWhatsApp").value = qs("fbclid");
 
 
-	var whatsappPhone = "5511993359712";
+	var whatsappPhone = "5511989072112";
 
 	var links = document.querySelectorAll('a[href*="'+whatsappPhone+'"]');
 	for (var i = 0; i < links.length; i++) {
@@ -86,7 +86,7 @@ window.addEventListener('load', function () {
 	       	$.modal.close();
 			// window.open(WhatsAppUrlRedirect, '_blank').focus();
             // var link = document.createElement("a");
-            // link.href = "https://api.whatsapp.com/send?phone=11993359712";
+            // link.href = "https://api.whatsapp.com/send?phone=11989072112";
             // link.target = "_blank";
             // link.style.display = "none";
             // document.body.appendChild(link);
