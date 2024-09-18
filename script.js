@@ -53,13 +53,9 @@
   // Adicionar endereço no rodapé da página
 function addEndereco() {
     const endereco1=`<p class="title">                            
-                        Rua Inhambu, 397 – Moema - São Paulo - SP - CEP: 04520-010
-                    </p>`
-    const endereco2=`<p class="title">                            
                         Rua Aureliano Leal, 219 – Santana - São Paulo - SP - CEP: 02334-090
                     </p>`
     $("#rodape > div.institucional.fundo-secundario > div > div > div > div > div.links-rodape.links-rodape-atendimento.span3 > div > p:nth-child(2)").after(endereco1);
-    $("#rodape > div.institucional.fundo-secundario > div > div > div > div > div.links-rodape.links-rodape-atendimento.span3 > div > p:nth-child(2)").after(endereco2);
 }
     addEndereco();
 
